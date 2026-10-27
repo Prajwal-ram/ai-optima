@@ -52,8 +52,20 @@ llvm_update_compile_flags(dl-opt-tool)
 target_link_libraries(dl-opt-tool PRIVATE ${LIBS})
 
 # Provides memrefCopy for JIT-executed bufferized tensor functions.
+# MLIR runtime libraries have platform-specific names and locations.
+if(APPLE)
+  set(AI_OPTIMA_C_RUNNER_UTILS_PATH
+      "${LLVM_LIBRARY_DIR}/libmlir_c_runner_utils.dylib")
+elseif(WIN32)
+  set(AI_OPTIMA_C_RUNNER_UTILS_PATH
+      "${LLVM_TOOLS_BINARY_DIR}/libmlir_c_runner_utils.dll")
+else()
+  set(AI_OPTIMA_C_RUNNER_UTILS_PATH
+      "${LLVM_LIBRARY_DIR}/libmlir_c_runner_utils.so")
+endif()
+
 target_compile_definitions(dl-opt-tool PRIVATE
-  AI_OPTIMA_C_RUNNER_UTILS_PATH="${LLVM_TOOLS_BINARY_DIR}/libmlir_c_runner_utils.dll"
+  AI_OPTIMA_C_RUNNER_UTILS_PATH="${AI_OPTIMA_C_RUNNER_UTILS_PATH}"
   AI_OPTIMA_LLVM_BIN_PATH="${LLVM_TOOLS_BINARY_DIR}"
 )
 
