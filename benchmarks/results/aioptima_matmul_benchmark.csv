@@ -1,0 +1,5 @@
+"Mode","Size","TileSize","Runs","MedianJitUs","MedianCppReferenceUs","SpeedupVsCppReference","JitGflops","MaxAbsoluteError","Cpu","Os","Pipeline"
+"matmul","16","16","15","4.9","2.35625","0.4808673","1.671837","0","Intel64 Family 6 Model 186 Stepping 2, GenuineIntel","Microsoft Windows NT 10.0.26200.0","fusion, lowering, tiling, bufferization, LLVM dialect; LLVM JIT O3"
+"matmul","32","16","15","40.8","18.39375","0.4508272","1.606275","0","Intel64 Family 6 Model 186 Stepping 2, GenuineIntel","Microsoft Windows NT 10.0.26200.0","fusion, lowering, tiling, bufferization, LLVM dialect; LLVM JIT O3"
+"matmul","64","16","15","388.3","86.3875","0.2224762","1.350214","0","Intel64 Family 6 Model 186 Stepping 2, GenuineIntel","Microsoft Windows NT 10.0.26200.0","fusion, lowering, tiling, bufferization, LLVM dialect; LLVM JIT O3"
+"matmul","128","16","15","1253.5","1118.681","0.8924462","3.346074","0","Intel64 Family 6 Model 186 Stepping 2, GenuineIntel","Microsoft Windows NT 10.0.26200.0","fusion, lowering, tiling, bufferization, LLVM dialect; LLVM JIT O3"

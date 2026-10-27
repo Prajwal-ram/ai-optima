@@ -1,0 +1,78 @@
+[
+  {
+    "method": "C++ Naive",
+    "size": 64,
+    "time_us": 181.3,
+    "gflops": 2.8918257032542742
+  },
+  {
+    "method": "C++ Tiled",
+    "size": 64,
+    "time_us": 33.4,
+    "gflops": 15.697245508982036
+  },
+  {
+    "method": "C++ Naive",
+    "size": 128,
+    "time_us": 2667.2,
+    "gflops": 1.5725494901019796
+  },
+  {
+    "method": "C++ Tiled",
+    "size": 128,
+    "time_us": 260.7,
+    "gflops": 16.088622938243194
+  },
+  {
+    "method": "C++ Naive",
+    "size": 256,
+    "time_us": 21663.8,
+    "gflops": 1.5488710198580122
+  },
+  {
+    "method": "C++ Tiled",
+    "size": 256,
+    "time_us": 2592.9,
+    "gflops": 12.940889351691157
+  },
+  {
+    "method": "C++ Naive",
+    "size": 512,
+    "time_us": 170787.0,
+    "gflops": 1.5717557893750695
+  },
+  {
+    "method": "C++ Tiled",
+    "size": 512,
+    "time_us": 17244.4,
+    "gflops": 15.566529192085547
+  },
+  {
+    "method": "NumPy",
+    "size": 64,
+    "time_us": 14.809996355324984,
+    "gflops": 35.400954019241915,
+    "std_us": 0.38066022472617234
+  },
+  {
+    "method": "NumPy",
+    "size": 128,
+    "time_us": 261.4600001834333,
+    "gflops": 16.04185725180674,
+    "std_us": 34.48520486916861
+  },
+  {
+    "method": "NumPy",
+    "size": 256,
+    "time_us": 1384.8500209860504,
+    "gflops": 24.22965049753788,
+    "std_us": 770.6278661421868
+  },
+  {
+    "method": "NumPy",
+    "size": 512,
+    "time_us": 2328.3299757167697,
+    "gflops": 115.29098486882768,
+    "std_us": 310.14518026033363
+  }
+]
